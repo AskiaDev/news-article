@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.dots {
+  width: 24px;
+}
+.title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.name,
+.date {
+  font-weight: 600;
+  color: #605f5f;
+}
+
+.content-p {
+  color: #777777cb;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 1rem;
+  position: relative;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input[type="text"] {
+  border: none;
+  font-family: "Poppins";
+  width: 300px;
+  opacity: 0.75;
+  border-radius: 5px;
+  padding: 10px 20px;
+  box-shadow: 0px 2px 5px 0px rgba(116, 116, 116, 0.276);
+  outline: none;
+}
+
+.nav-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.btn-publish {
+  border: 2px solid rgb(120, 219, 219);
+  border-radius: 5px;
+  background: rgb(226, 250, 250);
+  color: rgb(42, 197, 197);
+  padding: 3px;
+  cursor: pointer;
+}
+
+.btn-delete {
+  border: 2px solid #e02424;
+  border-radius: 5px;
+  background: #e024241f;
+  color: #e02424;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.genre {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.genre button {
+  background: #e7fdea;
+  border: 2px solid #51cf66;
+  padding: 10px;
+  border-radius: 8px;
+  color: #51cf66;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px 0px rgba(116, 116, 116, 0.276);
+}
+
+.list-item {
+  display: grid;
+  grid-template-columns: auto auto 1fr auto;
+  row-gap: 5px;
+  align-items: center;
+  column-gap: 8px;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.hidden-box {
+  grid-column: 3;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.content-btn {
+  display: flex;
+  font-size: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #228be6;
+}
+
+.flex-icons {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.flex-child {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.content-mail {
+  align-items: center;
+  display: flex;
+}
+
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.Modal {
+  background-color: white;
+  padding: 40px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  height: 600px;
+  overflow-y: auto;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.modal-close {
+  background-color: #9d9c9c31;
+  color: black;
+  font-weight: 700;
+  border: none;
+  font-size: 13px;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.content-modal {
+  padding: 10px;
+  line-height: 1.8;
+  border: 2px dashed black;
+  margin-top: 16px;
+}
+
+.modal-actions {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.publish-btn {
+  background-color: rgb(42, 197, 197);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.delete-btn {
+  background-color: #e02424;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.content-title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.modal-author {
+  font-weight: 600;
+  color: #737373;
+}
