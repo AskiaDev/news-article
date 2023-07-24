@@ -1,8 +1,9 @@
 import { useState } from "react";
-import Logo from "./components/logo";
 import Navbar from "./components/Navbar";
 import List from "./components/List";
 import Modal from "./components/Modal";
+import Logo from "./components/Logo";
+
 const DUMMY_DATA = [
   {
     article_id: 1,
